@@ -18,7 +18,7 @@ class App
         {
             $this->controller = $url[0];
             unset( $url[0] );
-        }
+        } 
 
         require_once '../app/controllers/'. $this->controller .'.php';
 
@@ -30,7 +30,7 @@ class App
             {
                 $this->method = $url[1];
                 unset( $url[1] );
-            }
+            } 
         }
 
         $this->params = $url ? array_values($url) : [];
