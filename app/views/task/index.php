@@ -24,6 +24,14 @@
                 <div class="card">
                     <div class="card-header">
                         Todo App
+                        <br>
+                        
+                    </div>
+                    <div class="list-group-item">
+                        <a href="create/" class="btn btn-sm btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Create new todo
+                        </a>
                     </div>
 
                     <ul class="todo-tasks list-group list-group-flush">
@@ -36,7 +44,7 @@
 
                                 $task_html = '<li class="task justify-content-between list-group-item d-flex">';
                                 $task_html .= '<div class="task-name" id="task-'.$task->Id.'">';
-                                $task_html .= '<a href="#" target="_blank" rel="noopener noreferrer">'.$task->task.'</a>';
+                                $task_html .= '<a href="#" rel="noopener noreferrer">'.$task->task.'</a>';
                                 $task_html .= '</div>';
                                 $task_html .= '<div class="task-actions flex-shrink-1">
                                                         <span class="edit"><a href="edit/'.$task->Id.'"><i class="fas fa-edit"></i></a></span>

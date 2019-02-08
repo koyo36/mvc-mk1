@@ -41,10 +41,10 @@ class Todo
 
     public function createTask( $task )
     {
-        $sql = "INSERT INTO tasks ( task ) VALUES ( :task ) ";
+        $sql = "INSERT INTO tasks ( task ) VALUES ( ? ) ";
         $req = $this->_pdo->prepare( $sql );
 
-        return $req->execute([ $task ]);
+        return $req->execute([$task]);
     }
 
     public function editTask( $id, $task )
