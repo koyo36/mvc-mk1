@@ -1,0 +1,93 @@
+/* Minimal CSS Reste */
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a, a:hover {
+    color: #fff;
+    text-decoration: none;    
+}
+
+/* TODO APP Style */
+body {
+   background: #b9dffc;  
+}
+.todo-app {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate( -50%, -50% );
+    
+}
+.card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: ease-in-out .25s;
+}
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: ease-in-out .25s;
+}
+.card-header {
+    background: #0984e3;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0;
+}
+.task-name {
+    margin-top: 5px;
+}
+.task-name a {
+    color: #616161;
+}
+.task-name a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #616161;
+}
+.task-actions span { 
+    font-size: 1.4em;
+}
+.task-actions i {
+    color: #ccc; 
+}
+.edit i:hover{
+    color: #ff7675;
+    cursor: pointer;
+}
+.done i:hover{
+    color: #00b894;
+    cursor: pointer;
+}
+.remove i:hover{
+    color: #d63031;
+    cursor: pointer;
+}
+.todo-tasks .lead-text {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.todo-tasks .edit-task {
+    background: #F5F5F5;
+}
+.todo-tasks .edit-task input{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
