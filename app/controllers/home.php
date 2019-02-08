@@ -6,8 +6,9 @@ class Home extends Controller
     {
         $user = $this->model('User');
         $user->name = $name;
-        
+
         $this->view('home/index', ['name' => $user->name]);
+
     }
 
     public function view( $view, $data = [])

@@ -18,5 +18,5 @@ require_once 'core/Config.php';
 require_once 'core/DB.php';
 
 $app = new App;
-$DB = DB::getInstance();
+
 
